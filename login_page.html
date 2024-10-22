@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="login_page.css">
 </head>
 <body>
-<div class="container">
+<div class="container_left">
     <div class="left">
         <h1>Welcome Back!</h1>
     </div>
+</div>
+<div class="container_right">
     <div class="right">
         <h2 class="right_cont">로그인</h2>
         <p class="right_cont">환영합니다! 회원 ID와 비밀번호를 입력하세요.</p>
@@ -26,11 +28,17 @@
             </div>
 
             <button type="submit" class="login-btn">Login</button>
-            <p class="sign-up">
-                첫 방문이신가요? <a href="sign-up.html">회원가입</a>하러가기
-                <a href="findID_page.html" class="forgot-password">아이디/비밀번호</a> 찾기
-            </p>
-            <p><a href="main_page.html" class="main_page">홈으로</a> 나가기</p>
+            <div class="sns-login">
+                <button type="button" class="naver_login"></button>
+                <button type="button" class="kakao_login"></button>
+                <button type="button" class="google_login"></button>
+
+            </div>
+            <div class="sign-up">
+                <p>첫 방문이신가요? <a href="sign-up.html">회원가입</a>하러가기</p>
+                <p><a href="findID_page.html" class="forgot-password">아이디/비밀번호</a> 찾기</p>
+            </div>
+            <div class="main_page"><p><a href="main_page.html" class="main_page2">홈으로</a> 나가기</p></div>
         </form>
     </div>
 </div>
