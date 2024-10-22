@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="login_page.css">
+</head>
+<body>
+<div class="container">
+    <div class="left">
+        <h1>Welcome Back!</h1>
+    </div>
+    <div class="right">
+        <h2 class="right_cont">로그인</h2>
+        <p class="right_cont">환영합니다! 회원 ID와 비밀번호를 입력하세요.</p>
+        <form>
+            <!-- <label for="username">회원 ID</label> -->
+            <input type="email" id="username" placeholder="회원 ID (fintech@gmail.com)" required>
+
+            <!-- <label for="password">비밀번호</label> -->
+            <input type="password" id="password" placeholder="비밀번호" required>
+
+            <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">ID 기억하기</label>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+            <p class="sign-up">
+                첫 방문이신가요? <a href="sign-up.html">회원가입</a>하러가기
+                <a href="findID_page.html" class="forgot-password">아이디/비밀번호</a> 찾기
+            </p>
+            <p><a href="main_page.html" class="main_page">홈으로</a> 나가기</p>
+        </form>
+    </div>
+</div>
+</body>
+</html>

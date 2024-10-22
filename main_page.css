@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
-    background: #d2ff72;
+    background: #fff;
 }
 
 .container {
@@ -11,13 +11,16 @@ body {
 
 .sidebar {
     width: 200px;
-    background: #73ec8b;
-    color: white;
+    background: #629584;
+    color: #000;
     padding: 20px;
 }
 
 .sidebar h2 {
     text-align: center;
+    background-color: #E2F1E7;
+    padding: 4px;
+    border-radius: 5px;
 }
 
 .sidebar nav ul {
@@ -28,6 +31,14 @@ body {
 .sidebar nav ul li {
     padding: 10px;
     cursor: pointer;
+}
+.sidebar nav ul li:hover {
+    background-color: #E2F1E7;
+    border-radius: 5px;
+}
+.sidebar_pages {
+    text-decoration: none;
+    color: #000;
 }
 
 .main-content {
@@ -42,36 +53,44 @@ header {
 }
 
 .welcome {
-    margin-right: 380px;
+    margin-right: 58%;
+    background-color: #E2F1E7;
+    border-radius: 5px;
+    padding: 20px;
 }
 
 .search {
     margin-right: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 0 10px;
     font-size: 15px;
-    border: 1px solid #15b392;
+    border: 1px solid #387478;
 }
 .search-btn {
     margin-right: 25px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
-    background: #15b392;
+    background: #387478;
     color: white;
-    font-size: 12px;
+    font-size: 15px;
 }
 .login-btn, .register-btn {
     margin-right: 5px;
     border: none;
-    background: #15b392;
+    background: #387478;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 13px;
     padding: 2px 5px;
+    text-decoration: none;
+}
+.login-btn:hover, .register-btn:hover, .search-btn:hover{
+    background: #243642;
+    cursor: pointer;
 }
 
 .calendar {
-    background: white;
+    background: #E2F1E7;
     padding: 20px;
     border-radius: 8px;
     margin: 20px 0;
