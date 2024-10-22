@@ -53,47 +53,46 @@ header {
 }
 
 .welcome {
-    margin-right: 58%;
+    margin-right: 40%;
     background-color: #E2F1E7;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 20px;
 }
 
 .search {
     margin-right: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 0 10px;
     font-size: 15px;
     border: 1px solid #387478;
+    width: 250px; height: 25px;
 }
 .search-btn {
-    margin-right: 25px;
-    border-radius: 5px;
+    width: 70px; height: 25px;
+    margin-right: 80px;
+    border-radius: 10px;
     border: none;
     background: #387478;
     color: white;
     font-size: 15px;
 }
-.login-btn, .register-btn {
+.login-btn, .sign-up-btn {
+    width: 70px; height: 25px;
     margin-right: 5px;
     border: none;
     background: #387478;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 13px;
     padding: 2px 5px;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.login-btn:hover, .register-btn:hover, .search-btn:hover{
+.login-btn:hover, .sign-up-btn:hover, .search-btn:hover{
     background: #243642;
     cursor: pointer;
-}
-
-.calendar {
-    background: #E2F1E7;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px 0;
 }
 
 .calendar-grid {
@@ -106,5 +105,5 @@ header {
     padding: 10px;
     border: 1px solid #ccc;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
 }
