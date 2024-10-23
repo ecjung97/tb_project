@@ -62,7 +62,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-p {
+p.right_cont, .sign-up p, .main_page p {
     margin-bottom: 20px;
     color: #666;
 }
@@ -91,6 +91,14 @@ input[type="password"] {
     margin-left: 10%;
     color: #666;
 }
+.remember {
+    display: flex;
+
+    & p {
+        margin-left: 10px;
+    }
+}
+
 
 input[type="checkbox"] {
     display: none; /* 기본 체크박스 숨기기 */
@@ -211,11 +219,11 @@ input[type="checkbox"]:checked + label:after {
     margin-right: 2em; margin-left: 2em;
 }
 .naver_login {
-    background-image: url("./images/naver_아이콘원형.png");
+    background-image: url("./images/naver_아이콘원형.png");
 }
 .kakao_login {
-    background-image: url("./images/kakao_sns_원형.png");
+    background-image: url("./images/kakao_sns_원형.png");
 }
 .google_login {
-    background-image: url("./images/google_sns_원형.png");
+    background-image: url("./images/google_sns_원형.png");
 }
