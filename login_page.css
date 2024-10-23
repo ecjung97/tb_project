@@ -219,11 +219,11 @@ input[type="checkbox"]:checked + label:after {
     margin-right: 2em; margin-left: 2em;
 }
 .naver_login {
-    background-image: url("./images/naver_아이콘원형.png");
+    background-image: url("./images/naver_sns_circle.png");
 }
 .kakao_login {
-    background-image: url("./images/kakao_sns_원형.png");
+    background-image: url("./images/kakao_sns_circle.png");
 }
 .google_login {
-    background-image: url("./images/google_sns_원형.png");
+    background-image: url("./images/google_sns_circle.png");
 }
