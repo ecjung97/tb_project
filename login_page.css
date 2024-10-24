@@ -1,3 +1,4 @@
+@import "color.css";
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #E2F1E7;
+    background-color: var(--background-color);
 }
 
 .container_left {
@@ -26,7 +27,7 @@ body {
 
 .left {
     flex: 1;
-    background: linear-gradient(135deg, #243642 0%, #629584 100%);
+    background: var(--sidebar-bg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,7 +65,7 @@ h2 {
 
 p.right_cont, .sign-up p, .main_page p {
     margin-bottom: 20px;
-    color: #666;
+    color: var(--text-color2);
 }
 
 /* label[for="username"], label[for="password"] {
@@ -79,7 +80,7 @@ input[type="password"] {
     height: 60px;
     padding: 10px;
     margin-bottom: 1em;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     margin-left: 10%;
 }
@@ -89,7 +90,7 @@ input[type="password"] {
     align-items: center;
     margin-bottom: 20px;
     margin-left: 10%;
-    color: #666;
+    color: var(--text-color2);
 }
 .remember {
     display: flex;
@@ -118,15 +119,15 @@ input[type="checkbox"] + label:before {
     transform: translateY(-50%);
     width: 20px; /* 체크박스 크기 */
     height: 20px; /* 체크박스 크기 */
-    border: 2px solid #629584; /* 테두리 색 */
+    border: 2px solid var(--third-color); /* 테두리 색 */
     border-radius: 8px; /* 모서리 둥글게 */
     background-color: white; /* 배경색 */
     transition: background-color 0.3s, border-color 0.3s; /* 애니메이션 효과 */
 }
 
 input[type="checkbox"]:checked + label:before {
-    background-color: #387478; /* 체크박스 체크 시 배경색 */
-    border-color: #387478; /* 체크 시 테두리 색 */
+    background-color: var(--secondary-color); /* 체크박스 체크 시 배경색 */
+    border-color: var(--secondary-color); /* 체크 시 테두리 색 */
 }
 
 input[type="checkbox"]:checked + label:after {
@@ -142,7 +143,7 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .login-btn {
-    background-color: #629584;
+    background-color: var(--third-color);
     color: white;
     border: none;
     padding: 10px;
@@ -155,7 +156,7 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .login-btn:hover {
-    background-color: #387478;
+    background-color: var(--secondary-color);
 }
 
 .sign-up {
@@ -169,7 +170,7 @@ input[type="checkbox"]:checked + label:after {
 .sign-up a {
     text-align: right;
     text-decoration: none;
-    color: #387478;
+    color: var(--secondary-color);
 }
 
 /* 미디어 쿼리 추가 */
@@ -195,7 +196,7 @@ input[type="checkbox"]:checked + label:after {
 }
 .main_page2 {
     text-decoration: none;
-    color: #387478;
+    color: var(--secondary-color);
 }
 .main_page2:hover {
     text-decoration: underline;

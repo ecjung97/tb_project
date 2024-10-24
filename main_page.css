@@ -1,8 +1,9 @@
+@import url('color.css');
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
-    background: #E2F1E7;
+    background: var(--background-color);
     display: flex;
     min-height: 100vh;
 }
@@ -17,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 15%;
-    background: linear-gradient(135deg, #243642 0%, #629584 100%);
+    background: var(--sidebar-bg);
     color: #fff;
     padding: 20px 0 20px 20px;
     min-height: 95.5vh;
@@ -43,12 +44,12 @@ body {
     cursor: pointer;
     position: relative;
     & a {
-        color: #fff;
+        color: var(--text-color1);
     }
     margin-left: 3em;
 }
 .sidebar nav ul li:hover {
-    background-color: #E2F1E7;
+    background-color: var(--background-color);
     border-top-left-radius: 10px; border-bottom-left-radius: 10px;
     &:before, &:after {
         content: "";
@@ -60,19 +61,19 @@ body {
     }
     &:before {
         bottom: 100%;
-        box-shadow: 16px 16px #E2F1E7;
+        box-shadow: 16px 16px var(--bg-hover-color);
     }
     &:after {
         top: 100%;
-        box-shadow: 16px -16px #E2F1E7;
+        box-shadow: 16px -16px var(--bg-hover-color);
     }
     & a {
-        color: #000;
+        color: var(--hover-color);
     }
 }
 .sidebar_pages {
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color1)  ;
 }
 
 .main-content {
@@ -90,7 +91,7 @@ body {
     padding: 1em;
     margin-bottom: 1em;
     height: 5%;
-    background-color: #fff;
+    background-color: var(--background-color);
 }
 
 .welcome {
@@ -110,7 +111,7 @@ body {
     border-radius: 10px;
     padding: 0 10px;
     font-size: 15px;
-    border: 1px solid #387478;
+    border: 1px solid var(--secondary-color);
     width: 40%; height: 2em;
 }
 .search-btn {
@@ -118,7 +119,7 @@ body {
     margin-right: 80px;
     border-radius: 10px;
     border: none;
-    background: #387478;
+    background: var(--secondary-color);
     color: white;
     font-size: 15px;
 }
@@ -129,7 +130,7 @@ body {
     width: 70px; height: 25px;
     margin-right: 5px;
     border: none;
-    background: #387478;
+    background: var(--secondary-color);
     color: white;
     border-radius: 10px;
     font-size: 13px;
@@ -140,7 +141,7 @@ body {
     justify-content: center;
 }
 .login-btn:hover, .sign-up-btn:hover, .search-btn:hover{
-    background: #243642;
+    background: var(--hover-color);
     cursor: pointer;
 }
 
@@ -149,7 +150,7 @@ body {
     border-radius: 20px;
     padding: 1em;
     width: 60%; height: 100%;
-    background-color: #fff;
+    background-color: var(--container-color);
     display: inline-block;
 }
 .calendar-grid {
@@ -160,7 +161,7 @@ body {
 
 .day {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     text-align: center;
     border-radius: 10px;
 }
@@ -197,7 +198,7 @@ body {
     display: inline-block;
     border: 2px solid black;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: var(--container-color);
     width: 34%; height: 100%;
     padding: 1em;
     margin-left: 1em;
