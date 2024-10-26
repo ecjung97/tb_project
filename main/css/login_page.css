@@ -14,43 +14,45 @@ body {
     background-color: var(--background-color);
 }
 
-.container_left {
+.container {
     display: flex;
-    flex-direction: column; /* 기본적으로 세로 방향으로 쌓이도록 설정 */
-    height: 80%; width: 30%;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
 }
-.container_right {
-    display: flex;
-    flex-direction: column; /* 기본적으로 세로 방향으로 쌓이도록 설정 */
-    height: 80%; width: 60%;
+.container_top {
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.left {
-    flex: 1;
+.container_bottom {
+    background-color: var(--background-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+}
+.top {
     background: var(--sidebar-bg);
-    display: flex;
-    justify-content: center;
     align-items: center;
     color: white;
     padding: 20px;
-    border-top-left-radius: 20px; border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px; border-top-right-radius: 20px;
 }
+
 @media screen and (max-width: 600px) {
-    .container_left, .left {
+    .container_top, .top {
         display: none;
     }
 }
 
-.right {
-    flex: 1;
+.bottom {
     background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 40px;
-    border-top-right-radius: 20px; border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
 }
-.right_cont, .sign-up {
+.bottom_cont, .sign-up {
     margin-left: 10%;
 }
 
@@ -63,7 +65,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-p.right_cont, .sign-up p, .main_page p {
+p.bottom_cont, .sign-up p, .main_page p {
     margin-bottom: 20px;
     color: var(--text-color2);
 }
@@ -94,7 +96,6 @@ input[type="password"] {
 }
 .remember {
     display: flex;
-
     & p {
         margin-left: 10px;
     }
@@ -150,9 +151,9 @@ input[type="checkbox"]:checked + label:after {
     border-radius: 10px;
     cursor: pointer;
     font-size: 1em;
-    margin-bottom: 30px;
     margin-left: 10%;
     width: 80%;
+    margin-bottom: 20px;
 }
 
 .login-btn:hover {
@@ -202,22 +203,43 @@ input[type="checkbox"]:checked + label:after {
     text-decoration: underline;
 }
 
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px; margin-left: 10%; margin-right: 10%;
+
+    &:before,
+    &:after {
+        content: "";
+        flex: 1; /* 양쪽 선이 동일한 비율로 늘어남 */
+        height: 1px; /* 선의 두께 */
+        background-color: #ccc; /* 선의 색상 */
+    }
+
+    & span {
+        padding: 0 10px; /* 텍스트 주변 여백 */
+        color: #999; /* 텍스트 색상 */
+        font-size: small;
+    }
+}
+
 .sns-login {
     display: flex;
     justify-content: space-between;
-    margin-left: 8em; margin-right: 8em;
+    margin-left: 4em; margin-right: 4em;
     margin-bottom: 1em;
 }
 
 .naver_login, .kakao_login, .google_login {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 4em;
-    height: 4em;
+    width: 4em; height: 4em;
     border: none;
     cursor: pointer;
-    border-radius: 30px;
-    margin-right: 2em; margin-left: 2em;
+    border-radius: 50px;
+    /*margin-right: 2em; margin-left: 2em;*/
+    margin-bottom: 10px;
 }
 .naver_login {
     background-image: url("../../images/naver_sns_circle.png");

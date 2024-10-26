@@ -6,15 +6,16 @@
     <link rel="stylesheet" href="../css/login_page.css">
 </head>
 <body>
-<div class="container_left">
-    <div class="left">
+<div class="container">
+<div class="container_top">
+    <div class="top">
         <h1>Welcome Back!</h1>
     </div>
 </div>
-<div class="container_right">
-    <div class="right">
-        <h2 class="right_cont">로그인</h2>
-        <p class="right_cont">환영합니다! 회원 ID와 비밀번호를 입력하세요.</p>
+<div class="container_bottom">
+    <div class="bottom">
+        <h2 class="bottom_cont">로그인</h2>
+        <p class="bottom_cont"><strong>환영합니다!</strong> <br><br>회원 ID와 비밀번호를 입력하세요.</p>
         <form>
             <!-- <label for="username">회원 ID</label> -->
             <input type="email" id="username" placeholder="회원 ID (fintech@gmail.com)" required>
@@ -24,10 +25,13 @@
 
             <div class="remember-me">
                 <input type="checkbox" id="remember">
-                <label for="remember"><p>ID 기억하기</p></label>
+                <label for="remember">ID 기억하기</label>
             </div>
 
             <button type="submit" class="login-btn">Login</button>
+            <div class="divider">
+                <span>또는</span>
+            </div>
             <div class="sns-login">
                 <button type="button" class="naver_login"></button>
                 <button type="button" class="kakao_login"></button>
@@ -41,6 +45,7 @@
             <div class="main_page"><p><a href="main_page.html" class="main_page2">홈으로</a> 나가기</p></div>
         </form>
     </div>
+</div>
 </div>
 </body>
 </html>
